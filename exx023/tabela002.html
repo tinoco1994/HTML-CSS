@@ -18,11 +18,17 @@ table{
     border-collapse: collapse;
 }
 thead, tfoot {
-    background-color: grey;
+    background-color: #383838;
     color: white;
 }
 td.num{
     text-align: right;
+}
+caption{
+font-size: 1.5em;
+font-weight: bold;
+padding: 10px;
+background-color: lightgray;
 }
 
     </style>
@@ -30,12 +36,13 @@ td.num{
 <body>
     <h1>Uso de tabelas grandes</h1>
 <table>
+    <caption>População das Unidades Federativas</caption>
 <thead>
 <tr>
-<th>
+<th scope="col">
  Estado   
 </th>
-<th>
+<th scope="col" style="width: 50px;"> 
 População
 
 </th>
